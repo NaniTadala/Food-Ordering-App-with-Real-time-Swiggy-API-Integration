@@ -1,0 +1,117 @@
+/* Normal Native CSS
+SCSS
+inline CSS
+Component Libraries - Material UI, Base UI, Ant, Chakra
+Styled component
+Tailwind CSS Framework
+    - CSS on the go (in the same file)
+    - Resusability
+    - Less bundle size
+    - Flexible UI (Customizations) */
+
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+    body {
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    #root {
+        width: 80%;
+        margin: auto;
+    }
+    
+    /* HEADER SECTION */
+    .logo {
+        width: 100px;
+    }
+    
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .nav-list {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    
+    /* BODY SECTION */
+    
+    .restaurant-cards {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-left: 47px;
+    }
+    
+    .card {
+        padding: 10px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+        border-radius: 5px;
+    }
+    
+    .card-img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .card-details {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .search-container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        padding-top: 0;
+    }
+    
+    .shimmer-card {
+        height: 390px;
+        background: #f6f7f8;
+        background-image: linear-gradient(
+            to right,
+            #f6f7f8 0%,
+            #edeef1 20%,
+            #f6f7f8 40%,
+            #f6f7f8 100%
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    
+        -webkit-animation-duration: 0.6s;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-name: placeholderShimmer;
+        -webkit-animation-timing-function: linear;
+    }
+    
+    @-webkit-keyframes placeholderShimmer {
+        0% {
+            background-position: -468px 0;
+        }
+    
+        100% {
+            background-position: 468px 0;
+        }
+    }
+    
+    footer {
+        text-align: center;
+        margin: 50px 0;
+    }
+    
+    
+    /* RESTAURANT MENU */
+    
+    .restaurant-menu {
+        display: flex;
+        gap: 200px;
+    }
